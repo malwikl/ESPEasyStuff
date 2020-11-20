@@ -1,4 +1,4 @@
-```
+
 on boot do
  gpio,13,1
  gpio,14,1
@@ -19,7 +19,3 @@ endon
 On Clock#Time=All,23:00 do 
   GPIO,14,1
 endon
-
-
-
-```
