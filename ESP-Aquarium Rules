@@ -1,0 +1,25 @@
+```
+on boot do
+ gpio,13,1
+ gpio,14,1
+endon
+
+On Clock#Time=All,08:00 do
+  gpio,13,0
+endon
+
+On Clock#Time=All,19:00 do
+  gpio,13,1
+endon
+
+On Clock#Time=All,%sunset-1h% do 
+  GPIO,14,0
+endon
+
+On Clock#Time=All,23:00 do 
+  GPIO,14,1
+endon
+
+
+
+```
